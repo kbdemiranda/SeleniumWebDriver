@@ -34,11 +34,11 @@ public class DriverFactory {
 			break;
 		case DRIVER_IE:
 			if (SystemUtils.IS_OS_LINUX) {
-				System.out.println("Não existem navegadores para esse sistema");
+				System.out.println("NÃ£o existem navegadores para esse sistema");
 			}else if(SystemUtils.IS_OS_WINDOWS){
 				System.setProperty("webdriver.ie.driver", "WebDrivers/windows/IEDriverServer.exe");
 			}else {
-				System.out.println("Não existem navegadores para esse sistema");
+				System.out.println("NÃ£o existem navegadores para esse sistema");
 			}
 			driver = new InternetExplorerDriver();
 			break;
